@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Anusha R, an Artificial Intelligence & Machine Learning (AIML) Engineer and Backend Developer. View projects in NLP, Agentic AI, and Full-Stack Development.">
+    <title>Anusha R | AI/ML & Full-Stack Developer Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Neural Network Background Canvas -->
+    <canvas id="neural-canvas"></canvas>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#" class="logo" id="logo-link">
+                <span class="logo-symbol">&lt;</span>
+                <span class="logo-text">Anusha<span class="accent-dot">.</span>ai</span>
+                <span class="logo-symbol">/&gt;</span>
+            </a>
+            <nav class="nav-links">
+                <a href="#about" class="nav-link" id="nav-about">About</a>
+                <a href="#skills" class="nav-link" id="nav-skills">Skills</a>
+                <a href="#projects" class="nav-link" id="nav-projects">Projects</a>
+                <a href="#experience" class="nav-link" id="nav-experience">Experience</a>
+                <a href="#contact" class="nav-link contact-btn" id="nav-contact">Contact Me</a>
+            </nav>
+            <button class="mobile-nav-toggle" aria-label="Toggle navigation" id="nav-toggle-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav-menu" id="mobile-nav-menu">
+        <a href="#about" class="mobile-nav-link" id="mob-nav-about">About</a>
+        <a href="#skills" class="mobile-nav-link" id="mob-nav-skills">Skills</a>
+        <a href="#projects" class="mobile-nav-link" id="mob-nav-projects">Projects</a>
+        <a href="#experience" class="mobile-nav-link" id="mob-nav-experience">Experience</a>
+        <a href="#contact" class="mobile-nav-link" id="mob-nav-contact">Contact Me</a>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="badge" id="hero-badge">
+                        <span class="badge-dot"></span>
+                        AI/ML Engineer &amp; Backend Developer
+                    </div>
+                    <h1 class="hero-title" id="hero-heading">
+                        Engineering Intelligent Systems,<br>
+                        Turning AI into <span class="gradient-text">Real-World Solutions</span>.
+                    </h1>
+                    <p class="hero-subtitle" id="hero-desc">
+                        I’m Anusha R, an Information Science and Engineering graduate focused on building intelligent systems across Machine Learning, Deep Learning, NLP, Computer Vision, Generative AI, and Agentic AI. I develop end-to-end AI applications using LLMs, multi-agent workflows, and backend engineering to turn AI capabilities into practical, deployable solutions.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary" id="hero-cta-projects">
+                            <i class="fa-solid fa-brain"></i> Explore Projects
+                        </a>
+                        <a href="#contact" class="btn btn-secondary" id="hero-cta-contact">
+                            Get in Touch
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator" id="hero-scroll-indicator">
+                <span class="mouse-icon"><span class="wheel"></span></span>
+                <span class="scroll-text">Scroll Down</span>
+            </div>
+        </section>
+
+        <!-- About & Journey Section -->
+        <section class="about-section section" id="about">
+            <div class="container">
+                <h2 class="section-title text-center" id="about-title">The Transition Journey</h2>
+                <div class="about-grid">
+                    <div class="about-text-card glass-card" id="about-card-info">
+                        <h3>Bridging Software & Machine Intelligence</h3>
+                        <p>
+                            I graduated with a <strong>B.E. in Information Science and Engineering (ISE)</strong> from Sri Siddhartha Institute of Technology. My academic journey has given me deep theoretical and practical foundations in neural networks, NLP, and agentic intelligence.
+                        </p>
+                        <p>
+                            To complement my AI learnings with software engineering skills, I worked as a <strong>Full Stack Web Developer Intern at SparkTech Innovations</strong>. This 3-month tenure allowed me to master the MERN stack, design responsive interfaces, create database models, and build robust RESTful APIs.
+                        </p>
+                        <div class="about-stats">
+                            <div class="stat-item">
+                                <span class="stat-num">8.69</span>
+                                <span class="stat-label">B.E. CGPA</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-num">3+</span>
+                                <span class="stat-label">Months Intern</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-num">5+</span>
+                                <span class="stat-label">AI/ML Repos</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline glass-card" id="about-card-timeline">
+                        <h3>Timeline & Education</h3>
+                        <div class="timeline-items">
+                            <div class="timeline-item">
+                                <div class="timeline-dot ml-dot"></div>
+                                <div class="timeline-date">Graduated (2022 - 2026)</div>
+                                <h4>Sri Siddhartha Institute of Technology</h4>
+                                <p>Completed B.E. in Information Science and Engineering (ISE) with a strong academic score of <strong>8.69 CGPA</strong> while building deep learning applications.</p>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot mern-dot"></div>
+                                <div class="timeline-date">Feb 2026 - May 2026</div>
+                                <h4>SparkTech Innovations (Internship)</h4>
+                                <p>Contributed as a Full Stack Web Developer Intern. Developed responsive user interfaces, integrated RESTful APIs, and designed SQL databases utilizing Node.js, React, and Express.</p>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot se-dot"></div>
+                                <div class="timeline-date">Passed in 2022</div>
+                                <h4>Class XII (Pre-University Education)</h4>
+                                <p>Completed Karnataka Board Class XII in English medium with an outstanding score of <strong>90.83%</strong>.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Matrix Section -->
+        <section class="skills-section section" id="skills">
+            <div class="container">
+                <h2 class="section-title text-center" id="skills-title">Technical Expertise</h2>
+                <div class="skills-grid">
+                    <!-- Column 1: AI/ML -->
+                    <div class="skills-card glass-card" id="skills-card-aiml">
+                        <div class="skills-card-header">
+                            <i class="fa-solid fa-microchip skills-icon aiml-color"></i>
+                            <h3>AI / ML Engineering</h3>
+                        </div>
+                        <p class="skills-card-desc">Training neural networks, designing NLP applications, and building agentic architectures.</p>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Deep Learning &amp; Neural Nets (ANN, CNN, RNN)</span>
+                                    <span>Advanced</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress aiml-bar" style="width: 88%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Natural Language Processing (NLP) &amp; Transformers</span>
+                                    <span>Advanced</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress aiml-bar" style="width: 85%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Agentic AI &amp; RAG (Retrieval Augmented Gen)</span>
+                                    <span>Intermediate</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress aiml-bar" style="width: 80%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Machine Learning (TensorFlow, PyTorch, Scikit)</span>
+                                    <span>Advanced</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress aiml-bar" style="width: 83%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Column 2: MERN Stack -->
+                    <div class="skills-card glass-card" id="skills-card-mern">
+                        <div class="skills-card-header">
+                            <i class="fa-solid fa-code skills-icon mern-color"></i>
+                            <h3>Backend Development</h3>
+                        </div>
+                        <p class="skills-card-desc">Designing user interfaces, robust servers, RESTful APIs, and database schemas.</p>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>React.js &amp; Frontend UIs</span>
+                                    <span>Advanced</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress mern-bar" style="width: 90%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Node.js &amp; Express.js</span>
+                                    <span>Advanced</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress mern-bar" style="width: 85%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>MongoDB &amp; SQL Databases</span>
+                                    <span>Intermediate</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress mern-bar" style="width: 80%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>RESTful APIs &amp; Backend Routing</span>
+                                    <span>Advanced</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress mern-bar" style="width: 88%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Column 3: Software Engineering Tools -->
+                    <div class="skills-card glass-card" id="skills-card-tools">
+                        <div class="skills-card-header">
+                            <i class="fa-solid fa-screwdriver-wrench skills-icon tools-color"></i>
+                            <h3>System &amp; Tools</h3>
+                        </div>
+                        <p class="skills-card-desc">Version control, deployment servers, and programming environments.</p>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Git &amp; GitHub Version Control</span>
+                                    <span>Advanced</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress tools-bar" style="width: 92%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Python &amp; Flask/FastAPI Setup</span>
+                                    <span>Advanced</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress tools-bar" style="width: 85%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>JavaScript &amp; HTML5/CSS3</span>
+                                    <span>Advanced</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress tools-bar" style="width: 90%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Languages (English, Kannada)</span>
+                                    <span>Fluent</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress tools-bar" style="width: 85%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Grid Section -->
+        <section class="projects-section section" id="projects">
+            <div class="container">
+                <h2 class="section-title text-center" id="projects-title">Featured Projects</h2>
+                <p class="section-subtitle text-center" id="projects-desc">A showcase of NLP transformers, Agentic AI, style transfer networks, and MERN applications.</p>
+
+                <!-- Filter Controls -->
+                <div class="filter-controls" id="project-filters">
+                    <button class="filter-btn active" data-filter="all" id="filter-btn-all">All Projects</button>
+                    <button class="filter-btn" data-filter="aiml" id="filter-btn-aiml">AI / ML</button>
+                    <button class="filter-btn" data-filter="mern" id="filter-btn-mern">Backend Developer</button>
+                </div>
+
+                <!-- Projects Container -->
+                <div class="projects-grid" id="projects-container">
+
+                    <!-- Project NEW-1: Intelligent Face And Voice Attendance System -->
+                    <article class="project-card glass-card" data-category="aiml" id="proj-card-faceattend">
+                        <div class="project-card-header">
+                            <span class="project-tag aiml-tag">Computer Vision / Multimodal AI</span>
+                            <h3 class="project-card-title">Intelligent Face And Voice Attendance System</h3>
+                        </div>
+                        <div class="project-card-body">
+                            <p>An AI-powered multimodal attendance system that combines facial and voice recognition to identify students and automate subject-wise attendance through dedicated teacher and student portals.</p>
+                            <div class="project-tech">
+                                <span>Face Recognition</span>
+                                <span>Voice Recognition</span>
+                                <span>Dlib</span>
+                                <span>Resemblyzer</span>
+                                <span>SVM</span>
+                                <span>Supabase</span>
+                                <span>Streamlit</span>
+                                <span>WebRTC</span>
+                            </div>
+                        </div>
+                        <div class="project-card-footer">
+                            <button class="btn btn-card-detail" data-project="faceattend" id="btn-detail-faceattend">
+                                Details <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Project NEW-2: AI RealTime Gym Coach -->
+                    <article class="project-card glass-card" data-category="aiml" id="proj-card-gymcoach">
+                        <div class="project-card-header">
+                            <span class="project-tag aiml-tag">Computer Vision / AI</span>
+                            <h3 class="project-card-title">AI RealTime Gym Coach</h3>
+                        </div>
+                        <div class="project-card-body">
+                            <p>A real-time AI fitness coaching system that uses pose estimation and exercise-specific movement analysis to count repetitions, evaluate exercise form, and provide real-time coaching feedback.</p>
+                            <div class="project-tech">
+                                <span>MediaPipe</span>
+                                <span>Pose Estimation</span>
+                                <span>OpenCV</span>
+                                <span>Streamlit WebRTC</span>
+                                <span>Computer Vision</span>
+                                <span>LLM</span>
+                                <span>gTTS</span>
+                            </div>
+                        </div>
+                        <div class="project-card-footer">
+                            <button class="btn btn-card-detail" data-project="gymcoach" id="btn-detail-gymcoach">
+                                Details <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Project NEW-3: AI Resume ATS Score System -->
+                    <article class="project-card glass-card" data-category="aiml" id="proj-card-resumeats">
+                        <div class="project-card-header">
+                            <span class="project-tag aiml-tag">NLP / Generative AI</span>
+                            <h3 class="project-card-title">AI Resume ATS Score System</h3>
+                        </div>
+                        <div class="project-card-body">
+                            <p>An AI-powered resume intelligence system that analyzes resumes against job descriptions, evaluates ATS-oriented alignment, identifies skill and keyword gaps, and generates actionable optimization suggestions.</p>
+                            <div class="project-tech">
+                                <span>NLP</span>
+                                <span>LLM</span>
+                                <span>Semantic Analysis</span>
+                                <span>Embeddings</span>
+                                <span>FastAPI</span>
+                                <span>spaCy</span>
+                                <span>Supabase</span>
+                            </div>
+                        </div>
+                        <div class="project-card-footer">
+                            <button class="btn btn-card-detail" data-project="resumeats" id="btn-detail-resumeats">
+                                Details <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Project 1: T5 Abstractive Summarizer -->
+                    <article class="project-card glass-card" data-category="aiml" id="proj-card-t5">
+                        <div class="project-card-header">
+                            <span class="project-tag aiml-tag">NLP / AI</span>
+                            <h3 class="project-card-title">End-To-End-FineTuned-T5-Transformer-for-Abstractive-Text-Summarization </h3>
+                        </div>
+                        <div class="project-card-body">
+                            <p>An end-to-end NLP application that automatically generates concise summaries from long texts using a fine-tuned T5 Transformer model, deployed via FastAPI.</p>
+                            <div class="project-tech">
+                                <span>T5 Transformer</span>
+                                <span>FastAPI</span>
+                                <span>PyTorch</span>
+                                <span>Python</span>
+                            </div>
+                        </div>
+                        <div class="project-card-footer">
+                            <button class="btn btn-card-detail" data-project="t5" id="btn-detail-t5">
+                                Details <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Project 2: AdaIN -->
+                    <article class="project-card glass-card" data-category="aiml" id="proj-card-adain">
+                        <div class="project-card-header">
+                            <span class="project-tag aiml-tag">AI/ML</span>
+                            <h3 class="project-card-title">Real-Time-Neural-Style-Transfer-with-AdaIN</h3>
+                        </div>
+                        <div class="project-card-body">
+                            <p>Deep learning application for real-time neural style transfer using Adaptive Instance Normalization (AdaIN) in PyTorch.</p>
+                            <div class="project-tech">
+                                <span>PyTorch</span>
+                                <span>Python</span>
+                                <span>OpenCV</span>
+                                <span>Deep Learning</span>
+                            </div>
+                        </div>
+                        <div class="project-card-footer">
+                            <a href="https://github.com/anusharajanna027-git-in/Real-Time-Neural-Style-Transfer-with-AdaIN.git" target="_blank" class="btn btn-card-detail" style="margin-right: 10px;">
+                                <i class="fa-brands fa-github"></i> Code
+                            </a>
+                            <button class="btn btn-card-detail" data-project="adain" id="btn-detail-adain">
+                                Details <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Project 3: WanderNest -->
+                    <article class="project-card glass-card" data-category="mern" id="proj-card-wander">
+                        <div class="project-card-header">
+                            <span class="project-tag mern-tag">Backend Developer</span>
+                            <h3 class="project-card-title">WanderNest Stay Booking</h3>
+                        </div>
+                        <div class="project-card-body">
+                            <p>A full-stack booking application allowing users to search, list, and book unique stays across locations. Features secure user authentication and CRUD APIs.</p>
+                            <div class="project-tech">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>Express</span>
+                                <span>MongoDB</span>
+                            </div>
+                        </div>
+                        <div class="project-card-footer">
+                            <button class="btn btn-card-detail" data-project="wander" id="btn-detail-wander">
+                                Details <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Project 4: AI-Personal-Assistant -->
+                    <article class="project-card glass-card" data-category="aiml" id="proj-card-pa">
+                        <div class="project-card-header">
+                            <span class="project-tag aiml-tag">AI/ML</span>
+                            <h3 class="project-card-title">AI Personal Assistant</h3>
+                        </div>
+                        <div class="project-card-body">
+                            <p>Designed and developed an AI Assistant utilizing Flask, HTML, CSS, and JS. Integrates OpenRouter/OpenAI APIs for AI QA and email summarization.</p>
+                            <div class="project-tech">
+                                <span>Flask</span>
+                                <span>OpenRouter API</span>
+                                <span>HTML/CSS/JS</span>
+                                <span>Python</span>
+                            </div>
+                        </div>
+                        <div class="project-card-footer">
+                            <button class="btn btn-card-detail" data-project="pa" id="btn-detail-pa">
+                                Details <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Project 5: Agentic YouTube Analyzer -->
+                    <article class="project-card glass-card" data-category="aiml" id="proj-card-yt">
+                        <div class="project-card-header">
+                            <span class="project-tag aiml-tag">Agentic AI</span>
+                            <h3 class="project-card-title">AI YouTube Video Analyzer</h3>
+                        </div>
+                        <div class="project-card-body">
+                            <p>An Agentic AI application using Streamlit, Agno Agent Framework, and GPT-4o Mini to analyze video structures, generating detailed timelines and summaries.</p>
+                            <div class="project-tech">
+                                <span>Agno Framework</span>
+                                <span>Streamlit</span>
+                                <span>OpenRouter</span>
+                                <span>Python</span>
+                            </div>
+                        </div>
+                        <div class="project-card-footer">
+                            <button class="btn btn-card-detail" data-project="yt" id="btn-detail-yt">
+                                Details <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Project 6: SmartCart -->
+                    <article class="project-card glass-card" data-category="aiml" id="proj-card-smartcart">
+                        <div class="project-card-header">
+                            <span class="project-tag aiml-tag">Data Science</span>
+                            <h3 class="project-card-title">SmartCart-ClusteringSystem</h3>
+                        </div>
+                        <div class="project-card-body">
+                            <p>Customer segmentation and clustering system for e-commerce platforms using unsupervised machine learning algorithms.</p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>Scikit-learn</span>
+                                <span>Pandas</span>
+                                <span>K-Means</span>
+                            </div>
+                        </div>
+                        <div class="project-card-footer">
+                            <a href="https://github.com/anusharajanna027-git-in/SmartCart-ClusteringSystem.git" target="_blank" class="btn btn-card-detail" style="margin-right: 10px;">
+                                <i class="fa-brands fa-github"></i> Code
+                            </a>
+                            <button class="btn btn-card-detail" data-project="smartcart" id="btn-detail-smartcart">
+                                Details <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Project 7: CreditWise -->
+                    <article class="project-card glass-card" data-category="aiml" id="proj-card-creditwise">
+                        <div class="project-card-header">
+                            <span class="project-tag aiml-tag">Machine Learning</span>
+                            <h3 class="project-card-title">CreditWise-LoanSystem</h3>
+                        </div>
+                        <div class="project-card-body">
+                            <p>Machine learning classification model to predict loan approval probabilities based on user financial history and behavior.</p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>Scikit-Learn</span>
+                                <span>EDA</span>
+                                <span>Classification</span>
+                            </div>
+                        </div>
+                        <div class="project-card-footer">
+                            <a href="https://github.com/anusharajanna027-git-in/CreditWise-LoanSystem.git" target="_blank" class="btn btn-card-detail" style="margin-right: 10px;">
+                                <i class="fa-brands fa-github"></i> Code
+                            </a>
+                            <button class="btn btn-card-detail" data-project="creditwise" id="btn-detail-creditwise">
+                                Details <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Project 8: SigmaGPT -->
+                    <article class="project-card glass-card" data-category="mern" id="proj-card-sigmagpt">
+                        <div class="project-card-header">
+                            <span class="project-tag mern-tag">Backend Developer</span>
+                            <h3 class="project-card-title">SigmaGPT</h3>
+                        </div>
+                        <div class="project-card-body">
+                            <p>A full-stack conversational assistant application built with the MERN stack, featuring conversational interfaces and secure user sessions.</p>
+                            <div class="project-tech">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>Express</span>
+                                <span>MongoDB</span>
+                            </div>
+                        </div>
+                        <div class="project-card-footer">
+                            <a href="https://github.com/anusharajanna027-git-in/SigmaGPT.git" target="_blank" class="btn btn-card-detail" style="margin-right: 10px;">
+                                <i class="fa-brands fa-github"></i> Code
+                            </a>
+                            <button class="btn btn-card-detail" data-project="sigmagpt" id="btn-detail-sigmagpt">
+                                Details <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Project 9: Weather App -->
+                    <article class="project-card glass-card" data-category="mern" id="proj-card-weather">
+                        <div class="project-card-header">
+                            <span class="project-tag mern-tag">Web App</span>
+                            <h3 class="project-card-title">weather-app</h3>
+                        </div>
+                        <div class="project-card-body">
+                            <p>A responsive web application that provides real-time weather forecasts and environmental conditions using third-party APIs.</p>
+                            <div class="project-tech">
+                                <span>JavaScript</span>
+                                <span>HTML/CSS</span>
+                                <span>REST API</span>
+                                <span>Web</span>
+                            </div>
+                        </div>
+                        <div class="project-card-footer">
+                            <a href="https://github.com/anusharajanna027-git-in/weather-app.git" target="_blank" class="btn btn-card-detail" style="margin-right: 10px;">
+                                <i class="fa-brands fa-github"></i> Code
+                            </a>
+                            <button class="btn btn-card-detail" data-project="weather" id="btn-detail-weather">
+                                Details <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Project 10: Chat App -->
+                    <article class="project-card glass-card" data-category="mern" id="proj-card-chat">
+                        <div class="project-card-header">
+                            <span class="project-tag mern-tag">Backend Developer</span>
+                            <h3 class="project-card-title">Real-Time-Chat-Application</h3>
+                        </div>
+                        <div class="project-card-body">
+                            <p>Full-stack real-time messaging application with web sockets for instant communication and secure user authentication.</p>
+                            <div class="project-tech">
+                                <span>React</span>
+                                <span>Socket.io</span>
+                                <span>Node.js</span>
+                                <span>MongoDB</span>
+                            </div>
+                        </div>
+                        <div class="project-card-footer">
+                            <a href="https://github.com/anusharajanna027-git-in/Real-Time-Chat-Application.git" target="_blank" class="btn btn-card-detail" style="margin-right: 10px;">
+                                <i class="fa-brands fa-github"></i> Code
+                            </a>
+                            <button class="btn btn-card-detail" data-project="chat" id="btn-detail-chat">
+                                Details <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Detail Modals -->
+        <div class="modal-overlay" id="project-modal">
+            <div class="modal glass-card" id="modal-content-box">
+                <button class="modal-close" aria-label="Close modal" id="modal-close-btn">&times;</button>
+                <div class="modal-body-content" id="modal-inner-content">
+                    <!-- Dynamic modal content goes here -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Experience Timeline Section -->
+        <section class="experience-section section" id="experience">
+            <div class="container">
+                <h2 class="section-title text-center" id="experience-title">Professional Experience</h2>
+                <div class="experience-timeline">
+                    <!-- Internship -->
+                    <div class="experience-card glass-card" id="exp-card-internship">
+                        <div class="experience-header">
+                            <div>
+                                <span class="exp-badge">Internship</span>
+                                <h3 class="exp-role">Full Stack Web Developer Intern</h3>
+                                <h4 class="exp-company">SparkTech Innovations</h4>
+                            </div>
+                            <span class="exp-duration">Feb 2026 - May 2026</span>
+                        </div>
+                        <ul class="exp-details">
+                            <li>Collaborated with technical teams in a hybrid work environment to design, construct, and launch real-world web applications.</li>
+                            <li>Engineered highly responsive user interfaces using React.js and EJS template engines.</li>
+                            <li>Implemented scalable server-side logical paths and secure RESTful endpoints in Node.js and Express.js.</li>
+                            <li>Utilized database architectural practices to design, configure, and query relational SQL and NoSQL MongoDB datasets.</li>
+                        </ul>
+                    </div>
+
+                    <!-- AI/ML Trainee / Independent projects -->
+                    <div class="experience-card glass-card" id="exp-card-transition">
+                        <div class="experience-header">
+                            <div>
+                                <span class="exp-badge focus-badge">Academic Projects</span>
+                                <h3 class="exp-role">AI / ML Engineer &amp; Researcher</h3>
+                                <h4 class="exp-company">Sri Siddhartha Institute of Technology</h4>
+                            </div>
+                            <span class="exp-duration">Recent Months</span>
+                        </div>
+                        <ul class="exp-details">
+                            <li>Implemented and fine-tuned pre-trained HuggingFace T5 transformers for abstractive summarizing models, establishing NLP pipelines.</li>
+                            <li>Developed agentic models using Agno Framework and Streamlit to parse video transcripts and construct intelligent summaries.</li>
+                            <li>Programmed and tested Convolutional and Recurrent architectures in Python, PyTorch, and TensorFlow.</li>
+                            <li>Integrated OpenAI/OpenRouter APIs to handle secure environments and complex text synthesis.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section section" id="contact">
+            <div class="container">
+                <h2 class="section-title text-center" id="contact-title">Start a Conversation</h2>
+                <p class="section-subtitle text-center" id="contact-desc">Let's talk about full-stack architectures, transformer pipelines, or open roles in AI/ML!</p>
+                
+                <div class="contact-grid">
+                    <!-- Info details -->
+                    <div class="contact-info" id="contact-details-box">
+                        <div class="info-item">
+                            <i class="fa-solid fa-envelope info-icon"></i>
+                            <div>
+                                <h4>Email Me</h4>
+                                <p><a href="mailto:anusharajanna027@gmail.com">anusharajanna027@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fa-solid fa-phone info-icon"></i>
+                            <div>
+                                <h4>Call Me</h4>
+                                <p>+91-6363583160</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fa-solid fa-location-dot info-icon"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Tumkuru, Karnataka, India (Open to Relocation/Remote)</p>
+                            </div>
+                        </div>
+                        <div class="social-links-container">
+                            <h4>Find me on</h4>
+                            <div class="social-links">
+                                <a href="https://github.com/anusharajanna027-git-in" target="_blank" aria-label="GitHub" id="social-github"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn" id="social-linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="mailto:anusharajanna027@gmail.com" aria-label="Email" id="social-email"><i class="fa-solid fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <form class="contact-form glass-card" id="contact-form-el" onsubmit="event.preventDefault(); alert('Demo Message Sent! In a production app, this form can be integrated with EmailJS or a serverless function.');">
+                        <div class="form-group">
+                            <label for="contact-name">Your Name</label>
+                            <input type="text" id="contact-name" name="name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-email">Email Address</label>
+                            <input type="email" id="contact-email" name="email" placeholder="john@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-message">Message</label>
+                            <textarea id="contact-message" name="message" rows="5" placeholder="Hey, let's collaborate on an AI/ML project!" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block" id="contact-submit-btn">
+                            Send Message <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content text-center">
+            <p>&copy; 2026 Anusha R. Built with HTML, CSS, and Vanilla JavaScript. Dedicated to Backend &amp; AI/ML Engineering.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
